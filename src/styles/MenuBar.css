@@ -4,8 +4,8 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #000033;  /* dark blue */
-    color: #ffffff;             /* white */
+    background-color: #000033;  
+    color: #ffffff;             
     padding: 10px;
     z-index: 1000;
   }
@@ -20,6 +20,7 @@
   }
   
   .menu-bar button:hover {
-    color: #0000ff; /* blue */
+    color: red; 
+    font-weight: bold;
   }
   

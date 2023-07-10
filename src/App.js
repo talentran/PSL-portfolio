@@ -12,7 +12,6 @@ function App() {
   const { page } = useContext(PageContext);
 
   return (
-    <PageProvider>
       <div className="App">
         <MenuBar />
         <div className="container">
@@ -23,7 +22,6 @@ function App() {
           {page === 'contact' && <Contact />}
         </div>
       </div>
-    </PageProvider>
   );
 }
 

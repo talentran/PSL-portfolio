@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { PageContext } from '../PageContext';
-import './styles/MenuBar.css';
+import '../styles/MenuBar.css';
 
 const MenuBar = () => {
   const { setPage } = useContext(PageContext);

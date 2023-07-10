@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Contact.css';
+import '../styles/Contact.css';
 
 const Contact = () => {
   return (
@@ -27,7 +27,7 @@ const Contact = () => {
           </a>
         </li>
         <li>
-          Điện thoại: (206) 396-0921
+          Phone: (206) 396-0921
         </li>
         <li>
           <a href="https://mypage.tritran43.repl.co/" target="_blank" rel="noopener noreferrer">
