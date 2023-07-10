@@ -1,27 +1,29 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { PageContext } from './PageContext';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import MenuBar from './components/MenuBar';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
-import './App.css';
+import './styles/App.css';
 
 function App() {
+  const { page } = useContext(PageContext);
+
   return (
-    <Router>
+    <PageProvider>
       <div className="App">
         <MenuBar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/resume' component={Resume} />
-          <Route path='/contact' component={Contact} />
-        </Switch>
+        <div className="container">
+          {page === 'home' && <Home />}
+          {page === 'about' && <About />}
+          {page === 'projects' && <Projects />}
+          {page === 'resume' && <Resume />}
+          {page === 'contact' && <Contact />}
+        </div>
       </div>
-    </Router>
+    </PageProvider>
   );
 }
 

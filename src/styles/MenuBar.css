@@ -1,0 +1,25 @@
+.menu-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000033;  /* dark blue */
+    color: #ffffff;             /* white */
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .menu-bar button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-bar button:hover {
+    color: #0000ff; /* blue */
+  }
+  
